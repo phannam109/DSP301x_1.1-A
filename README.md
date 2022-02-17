@@ -70,5 +70,5 @@ Dòng có số kí tự không hợp lệ:
 
 Tổng số dòng hợp lệ:  21
 
-Tổng số dòng không hợp lệ:  4
+Tổng số dòng không hợp lệ:  4 >
 

@@ -6,7 +6,17 @@ Giới thiệu về Khoa học dữ liệu
 
 1. Tạo một chương trình Python mới có tên “lastname_firstname_grade_the_exams.py.” (Đảm bảo tệp mã nguồn của bạn nằm trong cùng thư mục với tệp dữ liệu bạn vừa tải xuống.)
 
+Các tệp dữ liệu là thông tin các câu trả lời của bài thi ở các lớp, lưu dưới định dạng _.txt_
+
+```
+N00000001,A,A,D,D,C,D,D,A,,C,D,B,C,,B,C,B,D,A,C,,A,,C,D
+N00000002,,A,,D,,B,D,A,C,C,D,,A,A,A,C,B,D,C,C,A,A,B,,D
+N00000003,B,A,,D,C,B,D,A,C,C,,B,A,B,A,C,B,D,A,,A,,B,D,D 
+```
+
 2. Viết một chương trình cho phép người dùng nhập tên của một tệp. 
+
+Sử dụng `input()` để nhập tên dữ liệu mỗi lần chạy chương trình.
 
 Sử dụng `try/except` để mở tệp được cung cấp để truy cập đọc. 
 
@@ -42,9 +52,9 @@ Sử dụng hàm len() để đếm được số dòng dữ liệu:
 
 Sử dụng hàm `len()` để xác định số kí tự hợp lệ của từng dòng là 26 và của mã sinh viên là 9 kí tự.
 
-Sử dụng hàm `str.startswith("N") để xác định kí tự đầu tiên của mã sinh viên là "N"
+Sử dụng hàm `str.startswith("N")` để xác định kí tự đầu tiên của mã sinh viên là "N"
 
-Sử dụng hàm 'str.isdigit()` để xác định giá trị đấy là số (TRUE) hay chuỗi kí tự (FALSE)
+Sử dụng hàm `str.isdigit()` để xác định giá trị đấy là số (TRUE) hay chuỗi kí tự (FALSE)
 
 Sử dụng vòng lặp `for` cùng điều kiện `if / else` để kiểm tra các dòng và tìm kiếm không hợp lệ.
 
@@ -71,5 +81,72 @@ Tổng số dòng không hợp lệ:  4
 
 ## Task 3: Chương trình chấm điểm bài thi
 
+Đáp án đúng cho bài thị:
 
+```answer_key = "B,A,D,D,C,B,D,A,C,C,D,B,A,B,A,C,B,D,A,C,A,A,B,D,D"```
 
+Tính điểm cho mỗi bài thi hợp lệ như sau:
+
+- +4 điểm cho mỗi câu trả lời đúng
+- 0 điểm cho mỗi câu trả lời bị bỏ qua
+- -1 điểm cho mỗi câu trả lời sai
+
+1. Tạo danh sách điểm thi tương ứng với các câu trả lời.
+
+Sử dụng vòng lặp 'for' chạy qua từng dòng của dữ liệu để đối chiếu với đáp án, đưa ra điểm số tương ứng.
+
+2. Tạo danh sách tổng điểm của các sinh viên trong mỗi lớp:
+
+Sử dụng hàm `sum()` để tính tổng các giá trị trong mỗi dòng.
+
+Sử dụng hàm `append()` để nhập các giá trị sau khi tính tổng vào danh sách điểm thi.
+
+3. Thống kê điểm của lớp.
+
+Sắp xếp danh sách điểm theo thứ tự tăng dần: dùng `sorted()` hoặc `sort()`
+
+Điểm trung bình = Tổng điểm / Tổng số sinh viên
+
+Giá trị trung vị = Giá trị ở giữa nếu số giá trị là số lẻ hoặc Trung bình 2 giá trị ở giữa nếu số giá trị là số chẵn.
+
+Điểm cao nhất = Hàm `max()`.
+
+Điểm thấp nhất = Hàm `min()`.
+
+Miền giá trị của điểm = Điểm cao nhất - Điểm thấp nhất.
+
+Kết quả ở dạng như sau: 
+
+```
+Điểm trung bình của lớp:  78.0 
+Điểm trung vị của lớp:  76 
+Điểm cao nhất của lớp:  100 
+Điểm thấp nhất của lớp:  66 
+Khoảng điểm của lớp:  34
+```
+
+## Task 4: Lưu trữ kết quả vào file
+
+1. Tạo danh sách chứa thông tin mã sinh viên và điểm số tương ứng
+
+Chạy vòng lặp qua từng dòng để lưu kết hợp mã sinh viên và điểm số tương ứng.
+
+Danh sách trước khi lưu file ở dạng như sau:
+
+```
+'N00000021,68\n',
+ 'N00000022,76\n',
+ 'N00000024,73\n',```
+ 
+ 2. Tạo file và lưu file kết quả.
+ 
+ Sử dụng `input()` để nhập tên file cần xuất.
+ 
+ Mờ file cần xuất ở mode "w" để có thể ghi lại với hàm `file.write`.
+ 
+ File được lưu lại ở định dạng _.txt_ với nội dung ở dạng sau:
+ 
+ ```
+ N00000021,68
+N00000022,76
+N00000024,73```

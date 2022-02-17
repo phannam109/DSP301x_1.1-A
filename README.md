@@ -183,13 +183,74 @@ N00000024,73
 
 ## Task 5: Sử dụng Pandas
 
+Một số biến được sử dụng để lưu dữ liệu:
+
+```
+table - Bảng dữ liệu ban đầu khi nhập file
+
+valid_table2 - Bảng dữ liệu sau khi loại bỏ các dữ liệu không hợp lệ
+
+invalid_table2 - Bảng dữ liệu chứa các dữ liệu không hợp lệ
+
+valid_table3 - Bảng dữ liệu hợp lệ đã điền điểm số
+
+answer_key - Đáp án đúng
+
+total_score - Bảng tổng điểm
+
+
+
+
+
+
+
+
 1. Sử dụng hàm `pd.read_csv('Tên file')` để mờ file.
 
 ![image](https://user-images.githubusercontent.com/85397065/154403422-17876e52-f47c-4ce2-ae24-532567421ca5.png)
 
+> Trong quá trình nhập file, Dòng nhiều hơn 26 kí tự đã bị pandas tự động loại bỏ _Chưa xử lý được_
+
 2. Kiểm tra tính hợp lệ của dữ liệu.
 
-Kiểm tra thông tin chung của dữ liệu: `pd.info()` để thấy được một số thông tin như số dòng, dạng dữ liệu
+Kiểm tra thông tin chung của dữ liệu: `pd.info()` để thấy được một số thông tin như số dòng, dạng dữ liệu.
 
 ![image](https://user-images.githubusercontent.com/85397065/154403668-8fd3aca2-b45f-4e26-ac20-9e3be07540ab.png)
+
+Lọc bảng dữ liệu và lưu lại giá trị hợp để sử dụng:
+- Sử dụng `pd.index()` để lấy các giá trị mã sinh viên đang được sủ dụng làm index.
+- Kết hợp hàm `str.len()` để tìm độ dài, `str.startswith("N")` để xác định bắt đầu bằng "N" hay không (True / False).
+- Sử dụng`str.removeprefix()` để xóa đi kí tự đầu tiên và `str.isdigit()` để xác định chuỗi còn lại là kí tự số hay string.
+
+Sau khi có bảng dữ liệu hợp lệ, sử dụng loại trừ để lọc ra bảng dữ liệu không hợp lệ từ bảng dữ liệu bang đầu bằng hàm `df[~df.a.isin(df.b)]`.
+
+3. Tính điểm cho các bài thi:
+
+Đáp án đúng:
+
+```answer_key = ("B,A,D,D,C,B,D,A,C,C,D,B,A,B,A,C,B,D,A,C,A,A,B,D,D").split(",")```
+
+Sử dụng hàm `pd.fillna(0)` để điền vào các giá trị NaN là các câu trả lời bị bỏ trống hoặc thiếu tương ứng 0 điểm.
+
+Sử dụng vòng lặp và hàm indexing `pd.iloc()` để chạy qua từng dòng của bảng và điền các giá trị điểm số thỏa mãn điều kiện đúng với đáp án đúng.
+
+Thêm cột Total (Tổng điểm) và tính tổng của từng hàng.
+
+Bảng điểm cuối cùng ta có được ở dạng như sau:
+![image](https://user-images.githubusercontent.com/85397065/154408558-5ae66e2f-4434-4dff-b361-0e11f18ecbaa.png)
+
+4. Thống kê điểm thi của lớp:
+
+Lấy riêng cột "Total" để lấy bảng mới dùng để tính thống kê và xuất file.
+
+Sử dụng hàm `pd.describe()` để miêu tả chung của bảng hoặc các hàm toán học để tính các giá trị cần thiết
+![image](https://user-images.githubusercontent.com/85397065/154408881-8b7a587d-d145-4c99-b8e8-aa6605922e8f.png)
+
+5. Xuất file:
+
+Sử dụng hàm `pd.to_csv()` để xuất file (Lưu ý: file xuất là _.txt_)
+
+
+
+
 

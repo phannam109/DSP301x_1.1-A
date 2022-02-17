@@ -2,6 +2,34 @@
 Giới thiệu về Khoa học dữ liệu
 # HƯỚNG DẪN HOÀN THÀNH DỰ ÁN
 
+Một số biến đã được lưu trư file:
+
+```
+mark_table - Bảng lưu dữ liệu sau khi nhập file
+
+valid_mark_table - Bảng chứa dữ liệu hợp lệ
+
+answer_key - Đáp án đúng
+
+scores - Danh sách điểm tương ứng với đáp án đúng
+
+total - Danh sách tổng điểm
+
+max_score - Điểm tối đa
+
+min_score - Điểm thấp nhất
+
+mean_score - Điểm trung bình
+
+median_score - Giá trị trung vị
+
+range_of_score - Khoảng điểm
+
+name_id - danh sách mã sinh viên
+
+score_table - bảng điểm 
+```
+
 ## Task 1: Nhập dữ liệu của tệp
 
 1. Tạo một chương trình Python mới có tên “lastname_firstname_grade_the_exams.py.” (Đảm bảo tệp mã nguồn của bạn nằm trong cùng thư mục với tệp dữ liệu bạn vừa tải xuống.)
@@ -152,3 +180,6 @@ Danh sách trước khi lưu file ở dạng như sau:
 N00000022,76
 N00000024,73
 ```
+
+# Task 5: Sử dụng Pandas
+

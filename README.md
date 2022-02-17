@@ -197,13 +197,7 @@ valid_table3 - Bảng dữ liệu hợp lệ đã điền điểm số
 answer_key - Đáp án đúng
 
 total_score - Bảng tổng điểm
-
-
-
-
-
-
-
+```
 
 1. Sử dụng hàm `pd.read_csv('Tên file')` để mờ file.
 

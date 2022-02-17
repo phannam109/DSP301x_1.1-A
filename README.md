@@ -35,3 +35,8 @@ Dữ liệu hợp lệ thỏa mãn các điều kiện sau:
 1. Báo cáo tổng số dòng dữ liệu được lưu trữ trong tệp:
 
 _Tổng số dòng dữ liệu được lưu trữ:  20_
+
+2. Phân tích từng dòng và đảm bảo nó hợp lệ:
+
+Sử dụng code `len` để xác định số kí tự hợp lệ của từng dòng là 26 và của mã học sinh là 9 kí tự.
+

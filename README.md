@@ -5,7 +5,7 @@ Giới thiệu về Khoa học dữ liệu
 1. Tạo một chương trình Python mới có tên “lastname_firstname_grade_the_exams.py.” (Đảm bảo tệp mã nguồn của bạn nằm trong cùng thư mục với tệp dữ liệu bạn vừa tải xuống.)
 2. Viết một chương trình cho phép người dùng nhập tên của một tệp. 
 
-Sử dụng try/except để mở tệp được cung cấp để truy cập đọc. 
+Sử dụng `try/except` để mở tệp được cung cấp để truy cập đọc. 
 
 Nếu tệp tồn tại, file sẽ được mở và bạn có thể in ra một thông báo xác nhận: _Mở thành công_
 

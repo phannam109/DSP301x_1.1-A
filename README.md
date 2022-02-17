@@ -2,7 +2,7 @@
 Giới thiệu về Khoa học dữ liệu
 # HƯỚNG DẪN HOÀN THÀNH DỰ ÁN
 
-Một số biến đã được lưu trư file:
+Một số biến đã được lưu trữ trong file python:
 
 ```
 mark_table - Bảng lưu dữ liệu sau khi nhập file

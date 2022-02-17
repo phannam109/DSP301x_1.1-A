@@ -181,5 +181,15 @@ N00000022,76
 N00000024,73
 ```
 
-# Task 5: Sử dụng Pandas
+## Task 5: Sử dụng Pandas
+
+1. Sử dụng hàm `pd.read_csv('Tên file')` để mờ file.
+
+![image](https://user-images.githubusercontent.com/85397065/154403422-17876e52-f47c-4ce2-ae24-532567421ca5.png)
+
+2. Kiểm tra tính hợp lệ của dữ liệu.
+
+Kiểm tra thông tin chung của dữ liệu: `pd.info()` để thấy được một số thông tin như số dòng, dạng dữ liệu
+
+![image](https://user-images.githubusercontent.com/85397065/154403668-8fd3aca2-b45f-4e26-ac20-9e3be07540ab.png)
 

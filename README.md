@@ -136,7 +136,8 @@ Danh sách trước khi lưu file ở dạng như sau:
 ```
 'N00000021,68\n',
  'N00000022,76\n',
- 'N00000024,73\n',```
+ 'N00000024,73\n',
+ ```
  
  2. Tạo file và lưu file kết quả.
  
@@ -149,4 +150,5 @@ Danh sách trước khi lưu file ở dạng như sau:
  ```
  N00000021,68
 N00000022,76
-N00000024,73```
+N00000024,73
+```

@@ -52,7 +52,7 @@ Bỏ dữ liệu không hợp lệ và lưu lại dữ liệu hợp lể để s
 
 Kết quả đạt được theo dạng sau:
 
-_Dòng có số kí tự không hợp lệ:
+> Dòng có số kí tự không hợp lệ:
 
  N00000023,,A,D,D,C,B,D,A,C,C,,C,,B,A,C,B,D,A,C,A,A
 
@@ -70,5 +70,5 @@ Dòng có số kí tự không hợp lệ:
 
 Tổng số dòng hợp lệ:  21
 
-Tổng số dòng không hợp lệ:  4_
+Tổng số dòng không hợp lệ:  4
 

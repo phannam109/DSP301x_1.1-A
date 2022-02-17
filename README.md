@@ -22,7 +22,7 @@ Phân tích dữ liệu có trong tệp bạn mới mở để đảm bảo rằ
 
 hoặc:
 
-_N12345678,B,,D,,C,B,,A,C,C,,B,A,B,A,,,,A,C,A,A,B,D,_
+```N12345678,B,,D,,C,B,,A,C,C,,B,A,B,A,,,,A,C,A,A,B,D,```
 
 Dữ liệu hợp lệ thỏa mãn các điều kiện sau:
 
@@ -36,7 +36,7 @@ Dữ liệu hợp lệ thỏa mãn các điều kiện sau:
 
 Sử dụng hàm len() để đếm được số dòng dữ liệu:
 
-_Tổng số dòng dữ liệu được lưu trữ:  20_
+```Tổng số dòng dữ liệu được lưu trữ:  20```
 
 2. Phân tích từng dòng và đảm bảo nó hợp lệ:
 
@@ -49,6 +49,25 @@ Sử dụng hàm 'str.isdigit()` để xác định giá trị đấy là số (
 Sử dụng vòng lặp `for` cùng điều kiện `if / else` để kiểm tra các dòng và tìm kiếm không hợp lệ.
 
 Bỏ dữ liệu không hợp lệ và lưu lại dữ liệu hợp lể để sử dụng cho thống kê sau này.
+
+Kết quả trả về có thể như sau:
+
+```
+Dòng có số kí tự không hợp lệ:
+ N00000023,,A,D,D,C,B,D,A,C,C,,C,,B,A,C,B,D,A,C,A,A
+
+Dòng chứa mã học sinh không hợp lệ:
+ N0000002,B,A,D,D,C,B,D,A,C,D,D,D,A,,A,C,D,,A,C,A,A,B,D,D
+
+Dòng chứa mã học sinh không hợp lệ:
+ NA0000027,B,A,D,D,,B,,A,C,B,D,B,A,,A,C,B,D,A,,A,A,B,D,D
+
+Dòng có số kí tự không hợp lệ:
+ N00000035,B,A,D,D,B,B,,A,C,,D,B,A,B,A,A,B,D,A,C,A,C,B,D,D,A,A
+
+Tổng số dòng hợp lệ:  21
+Tổng số dòng không hợp lệ:  4
+```
 
 ## Task 3: Chương trình chấm điểm bài thi
 
